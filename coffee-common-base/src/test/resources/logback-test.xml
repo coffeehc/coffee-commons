@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug=true"">
+    <property name="APP_NAME" value="coffee-common-base"/>
+    <contextName>${APP_NAME}</contextName>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                %d %-5level [%logger:%line] - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+	<logger name="com.coffee" level="debug"/>
+    <root level="error">
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>
